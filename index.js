@@ -1,8 +1,11 @@
-// index.js
+const TeleBot = require('telebot');
 
-const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; // Correctly define BOT_TOKEN
+// Set the BOT_TOKEN directly (enclose it in quotes)
+const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; // Replace with your actual bot token
 
-const TeleBot = require('telebot'); // Require the TeleBot package
-const bot = new TeleBot(BOT_TOKEN); // Initialize the bot with the token
+const bot = new TeleBot(BOT_TOKEN);
 
-// Your bot's logic goes here
+console.log('Bot Token:', BOT_TOKEN); // Check if token is loaded correctly
+
+bot.on('text', (msg) => msg.reply.text('Hello!'));
+bot.start();
