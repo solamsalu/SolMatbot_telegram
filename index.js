@@ -1,12 +1,8 @@
 // index.js
-// require('dotenv').config(); // Load .env file
-BOT_TOKEN='7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
 
-const TeleBot = require('telebot'); // Assuming you already have this import
-const BOT_TOKEN = process.env.BOT_TOKEN; // Use the token from the .env file
+const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; // Correctly define BOT_TOKEN
 
-const bot = new TeleBot(BOT_TOKEN);
+const TeleBot = require('telebot'); // Require the TeleBot package
+const bot = new TeleBot(BOT_TOKEN); // Initialize the bot with the token
 
-// Your existing bot code...
-
-bot.start();
+// Your bot's logic goes here
