@@ -415,6 +415,9 @@ console.log('Bot Token:', process.env.BOT_TOKEN);
 
 const TeleBot = require('telebot');
 const bot = new TeleBot(process.env.BOT_TOKEN);
+const dotenv = require('dotenv');
 
+// Load environment variables
+dotenv.config();
 bot.on('text', (msg) => msg.reply.text('Hello!'));
 bot.start();
