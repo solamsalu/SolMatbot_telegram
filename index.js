@@ -277,15 +277,15 @@
 // bot.start();
 
 
-
+require('dotenv').config();
 const TeleBot = require('telebot'); 
 const axios = require('axios');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 const { handleError } = require('./utils');
 
 // Load environment variables
 // dotenv.config();
-require('dotenv').config();
+
 
 // Initialize the bot (using object config)
 const bot = new TeleBot({
