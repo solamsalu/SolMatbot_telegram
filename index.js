@@ -7,9 +7,7 @@ const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
 
 
 // Initialize the bot (using object config)
-const bot = new TeleBot({
-    token: process.env.BOT_TOKEN
-});
+const bot = new TeleBot(BOT_TOKEN);
 
 // Discussion group chat ID (replace with your actual chat ID)
 const groupChatId = -1002323508017;
