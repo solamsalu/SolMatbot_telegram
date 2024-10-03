@@ -1,12 +1,11 @@
-
 const TeleBot = require('telebot'); 
 const axios = require('axios');
 const { handleError } = require('./utils');
 
+// Use the token directly
 const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
 
-
-// Initialize the bot (using object config)
+// Initialize the bot with the direct token
 const bot = new TeleBot(BOT_TOKEN);
 
 // Discussion group chat ID (replace with your actual chat ID)
@@ -15,7 +14,7 @@ const groupChatId = -1002323508017;
 // Function to check if user is in the discussion group
 async function isMemberOfGroup(userId) {
     try {
-        const res = await axios.get(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/getChatMember`, {
+        const res = await axios.get(`https://api.telegram.org/bot${BOT_TOKEN}/getChatMember`, {
             params: {
                 chat_id: groupChatId,
                 user_id: userId
@@ -42,23 +41,22 @@ async function canUseBot(userId, chatId) {
 // Command for /start
 bot.on('/start', async (msg) => {
     if (await canUseBot(msg.from.id, msg.chat.id)) {
-        bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`,
-            {
-                replyMarkup: bot.inlineKeyboard([
-                    [bot.inlineButton('Chapter 1: Algebra', { callback: '/chapter1' })],
-                    [bot.inlineButton('Quiz 1: Take Quiz', { callback: '/quiz1' })],
-                    [bot.inlineButton('Chapter 2: Linear Equations', { callback: '/chapter2' })],
-                    [bot.inlineButton('Quiz 2: Take Quiz', { callback: '/quiz2' })],
-                    [bot.inlineButton('Help', { callback: '/help' })],
-                    [bot.inlineButton('Feedback', { callback: '/feedback' })],
-                    [bot.inlineButton('Resources', { callback: '/resources' })],
-                    [bot.inlineButton('Daily Math Problem', { callback: '/dailyproblem' })],
-                    [bot.inlineButton('Upcoming Events', { callback: '/events' })],
-                    [bot.inlineButton('Contact Support', { callback: '/contact' })],
-                    [bot.inlineButton('Math Tips', { callback: '/mathtips' })],
-                    [bot.inlineButton('Quizzes Archive', { callback: '/quizzes' })]
-                ])
-            });
+        bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
+            replyMarkup: bot.inlineKeyboard([
+                [bot.inlineButton('Chapter 1: Algebra', { callback: '/chapter1' })],
+                [bot.inlineButton('Quiz 1: Take Quiz', { callback: '/quiz1' })],
+                [bot.inlineButton('Chapter 2: Linear Equations', { callback: '/chapter2' })],
+                [bot.inlineButton('Quiz 2: Take Quiz', { callback: '/quiz2' })],
+                [bot.inlineButton('Help', { callback: '/help' })],
+                [bot.inlineButton('Feedback', { callback: '/feedback' })],
+                [bot.inlineButton('Resources', { callback: '/resources' })],
+                [bot.inlineButton('Daily Math Problem', { callback: '/dailyproblem' })],
+                [bot.inlineButton('Upcoming Events', { callback: '/events' })],
+                [bot.inlineButton('Contact Support', { callback: '/contact' })],
+                [bot.inlineButton('Math Tips', { callback: '/mathtips' })],
+                [bot.inlineButton('Quizzes Archive', { callback: '/quizzes' })]
+            ])
+        });
     }
 });
 
@@ -73,13 +71,13 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Chapter 1: Introduction to Algebra\n\nIn this chapter, we will learn about variables, equations, and basic algebraic operations.\nReference: https://example.com/reference-material\nTextbook: https://example.com/textbook");
                 break;
             case '/quiz1':
-                bot.sendMessage(chatId, `Take the quiz for Chapter 1: ${quizLinks.chapter1}`);
+                bot.sendMessage(chatId, `Take the quiz for Chapter 1: [Link to Quiz 1]`);
                 break;
             case '/chapter2':
                 bot.sendMessage(chatId, "Chapter 2: Linear Equations\n\nIn this chapter, we will learn about linear equations and their applications.\nReference: https://example.com/reference-material\nTextbook: https://example.com/textbook");
                 break;
             case '/quiz2':
-                bot.sendMessage(chatId, `Take the quiz for Chapter 2: ${quizLinks.chapter2}`);
+                bot.sendMessage(chatId, `Take the quiz for Chapter 2: [Link to Quiz 2]`);
                 break;
             case '/help':
                 bot.sendMessage(chatId, "Here are the available commands:\n" +
