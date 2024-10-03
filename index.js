@@ -284,7 +284,8 @@ const dotenv = require('dotenv');
 const { handleError } = require('./utils');
 
 // Load environment variables
-dotenv.config();
+// dotenv.config();
+require('dotenv').config();
 
 // Initialize the bot (using object config)
 const bot = new TeleBot({
