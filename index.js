@@ -44,8 +44,8 @@ bot.on('/start', async (msg) => {
     if (await canUseBot(msg.from.id, msg.chat.id)) {
         bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
             replyMarkup: bot.inlineKeyboard([
-                [bot.inlineButton('Calculus (Math1002)', { callback: '/calculus' })],
-                [bot.inlineButton('Algebra (Math1021)', { callback: '/algebra' })],
+                [bot.inlineButton('Calculus (Math1002)', { callback_data: '/calculus' })],
+                [bot.inlineButton('Algebra (Math1021)', { callback_data: '/algebra' })],
                 [bot.inlineButton('Help', { callback: '/help' })],
                 [bot.inlineButton('Feedback', { callback: '/feedback' })],
                 [bot.inlineButton('Resources', { callback: '/resources' })],
