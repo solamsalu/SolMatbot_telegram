@@ -124,16 +124,14 @@ bot.on('/feedback', async (msg) => {
 });
 
 // Command for /resources
-bot.on('/resources', async (msg) => {
+bot.on('/contact', async (msg) => {
     const chatId = msg.chat.id;
     try {
         if (await canUseBot(msg.from.id, chatId)) {
-            bot.sendMessage(chatId, "Here are some useful resources:\n" +
-                "1. Online Textbook: [Link]\n" +
-                "2. Tutorial Videos: [Link]");
+            bot.sendMessage(chatId, "You can contact support at: [Contact Support](https://t.me/BarokMat)", { parseMode: 'MarkdownV2' });
         }
     } catch (error) {
-        console.error('Error in /resources command:', error);
+        console.error('Error in /contact command:', error);
         bot.sendMessage(chatId, 'An error occurred. Please try again later.');
     }
 });
@@ -198,7 +196,7 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Upcoming events:\n1. Math Webinar on October 15th\n2. Algebra Workshop on October 20th");
                 break;
             case '/contact':
-                bot.sendMessage(chatId, "You can contact support at: support@example.com");
+                bot.sendMessage(chatId, "You can contact support at: [Contact Support](https://t.me/BarokMat)", { parseMode: 'MarkdownV2' });
                 break;
             case '/mathtips':
                 bot.sendMessage(chatId, "Tip: Always check your work! Double-check calculations and answers.");
