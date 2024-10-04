@@ -50,7 +50,7 @@ bot.on('/start', async (msg) => {
                 [bot.inlineButton('Feedback', { callback: '/feedback' })],
                 [bot.inlineButton('Resources', { callback: '/resources' })],
                 [bot.inlineButton('Daily Math Problem', { callback: '/dailyproblem' })],
-                [bot.inlineButton('Join Discussion Forum', { callback: '/discussion' })],
+                [bot.inlineButton('Discussion Forum', { callback: '/discussion' })],
                 [bot.inlineButton('Upcoming Events', { callback: '/events' })],
                 [bot.inlineButton('Contact Support', { callback: '/contact' })],
                 [bot.inlineButton('Math Tips', { callback: '/mathtips' })],
@@ -143,7 +143,7 @@ bot.on('/discussion', async (msg) => {
     const chatId = msg.chat.id;
     try {
         if (await canUseBot(msg.from.id, chatId)) {
-            bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](${groupChatId})`, { parseMode: 'Markdown' });
+            bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](https://t.me/+1IJOyAA5CGM4YzJk)`, { parseMode: 'Markdown' });
         }
     } catch (error) {
         console.error('Error in /discussion command:', error);
@@ -192,7 +192,7 @@ bot.on('callbackQuery', async (msg) => {
                 // Implement daily problem generation
                 break;
             case '/discussion':
-                bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](${groupChatId})`, { parseMode: 'Markdown' });
+                bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](https://t.me/+1IJOyAA5CGM4YzJk)`, { parseMode: 'Markdown' });
                 break;
             case '/events':
                 bot.sendMessage(chatId, "Upcoming events:\n1. Math Webinar on October 15th\n2. Algebra Workshop on October 20th");
