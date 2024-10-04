@@ -59,6 +59,54 @@ bot.on('/start', async (msg) => {
     }
 });
 
+bot.on('/algebra', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            sendAlgebraMenu(chatId);
+        }
+    } catch (error) {
+        console.error('Error in /algebra command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
+// Command for /calculus
+bot.on('/calculus', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            sendCalculusMenu(chatId);
+        }
+    } catch (error) {
+        console.error('Error in /calculus command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
+// Command for /help
+bot.on('/help', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            bot.sendMessage(chatId, "Here are the available commands:\n" +
+                "/start - Start the bot\n" +
+                "/calculus - Access Calculus (Math1002)\n" +
+                "/algebra - Access Algebra (Math1021)\n" +
+                "/feedback - Share your feedback\n" +
+                "/resources - Access useful resources\n" +
+                "/dailyproblem - Get a daily math problem\n" +
+                "/events - View upcoming events\n" +
+                "/contact - Contact support\n" +
+                "/mathtips - Get math tips\n" +
+                "/quizzes - Access quizzes archive");
+        }
+    } catch (error) {
+        console.error('Error in /help command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
 // CallbackQuery listener
 bot.on('callbackQuery', async (msg) => {
     const chatId = msg.message.chat.id;
