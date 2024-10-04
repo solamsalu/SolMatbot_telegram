@@ -179,7 +179,10 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Take the quiz for Chapter 1: https://quizizz.com/calculus/chapter1");
                 break;
             case '/calculus_ws1':
-                bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: [Download Worksheet 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf)");
+                // bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: [Download Worksheet 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf)");
+
+                bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf'>Download Worksheet 1</a>", { parseMode: 'HTML' });
+
 
                 break;
             case '/calculus_ch2':
