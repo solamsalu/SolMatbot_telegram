@@ -44,12 +44,13 @@ bot.on('/start', async (msg) => {
     if (await canUseBot(msg.from.id, msg.chat.id)) {
         bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
             replyMarkup: bot.inlineKeyboard([
-                [bot.inlineButton('Calculus (Math1002)', { callback_data: '/calculus' })],
-                [bot.inlineButton('Algebra (Math1021)', { callback_data: '/algebra' })],
+                [bot.inlineButton('Calculus (Math1002)', { callback: '/calculus' })],
+                [bot.inlineButton('Algebra (Math1021)', { callback: '/algebra' })],
                 [bot.inlineButton('Help', { callback: '/help' })],
                 [bot.inlineButton('Feedback', { callback: '/feedback' })],
                 [bot.inlineButton('Resources', { callback: '/resources' })],
                 [bot.inlineButton('Daily Math Problem', { callback: '/dailyproblem' })],
+                [bot.inlineButton('Join Discussion Forum', { callback: '/discussion' })],
                 [bot.inlineButton('Upcoming Events', { callback: '/events' })],
                 [bot.inlineButton('Contact Support', { callback: '/contact' })],
                 [bot.inlineButton('Math Tips', { callback: '/mathtips' })],
@@ -96,6 +97,7 @@ bot.on('/help', async (msg) => {
                 "/feedback - Share your feedback\n" +
                 "/resources - Access useful resources\n" +
                 "/dailyproblem - Get a daily math problem\n" +
+                "/discussion - Join Discussion Forum\n" +
                 "/events - View upcoming events\n" +
                 "/contact - Contact support\n" +
                 "/mathtips - Get math tips\n" +
@@ -103,6 +105,48 @@ bot.on('/help', async (msg) => {
         }
     } catch (error) {
         console.error('Error in /help command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
+// Command for /feedback
+bot.on('/feedback', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            bot.sendMessage(chatId, "Please share your feedback or suggestions:");
+            // Implement feedback handling logic here
+        }
+    } catch (error) {
+        console.error('Error in /feedback command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
+// Command for /resources
+bot.on('/resources', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            bot.sendMessage(chatId, "Here are some useful resources:\n" +
+                "1. Online Textbook: [Link]\n" +
+                "2. Tutorial Videos: [Link]");
+        }
+    } catch (error) {
+        console.error('Error in /resources command:', error);
+        bot.sendMessage(chatId, 'An error occurred. Please try again later.');
+    }
+});
+
+// Command for /discussion
+bot.on('/discussion', async (msg) => {
+    const chatId = msg.chat.id;
+    try {
+        if (await canUseBot(msg.from.id, chatId)) {
+            bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](${groupChatId})`, { parseMode: 'Markdown' });
+        }
+    } catch (error) {
+        console.error('Error in /discussion command:', error);
         bot.sendMessage(chatId, 'An error occurred. Please try again later.');
     }
 });
