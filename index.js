@@ -97,7 +97,7 @@ bot.on('/help', async (msg) => {
                 "/feedback - Share your feedback\n" +
                 "/resources - Access useful resources\n" +
                 "/dailyproblem - Get a daily math problem\n" +
-                "/discussion - Join Discussion Forum\n" +
+                "/discussion - Discussion Forum\n" +
                 "/events - View upcoming events\n" +
                 "/contact - Contact support\n" +
                 "/mathtips - Get math tips\n" +
@@ -172,6 +172,7 @@ bot.on('callbackQuery', async (msg) => {
                     "/feedback - Share your feedback\n" +
                     "/resources - Access useful resources\n" +
                     "/dailyproblem - Get a daily math problem\n" +
+                    "/discussion - Discussion Forum\n" +
                     "/events - View upcoming events\n" +
                     "/contact - Contact support\n" +
                     "/mathtips - Get math tips\n" +
@@ -189,6 +190,9 @@ bot.on('callbackQuery', async (msg) => {
             case '/dailyproblem':
                 bot.sendMessage(chatId, "Today's math problem: What is 12 + 15?");
                 // Implement daily problem generation
+                break;
+            case '/discussion':
+                bot.sendMessage(chatId, `Welcome to the discussion forum! Feel free to ask questions or share your thoughts. Join the discussion forum here: [Discussion Forum](${groupChatId})`, { parseMode: 'Markdown' });
                 break;
             case '/events':
                 bot.sendMessage(chatId, "Upcoming events:\n1. Math Webinar on October 15th\n2. Algebra Workshop on October 20th");
