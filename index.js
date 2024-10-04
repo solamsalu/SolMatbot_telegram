@@ -172,15 +172,21 @@ bot.on('callbackQuery', async (msg) => {
     if (await canUseBot(msg.from.id, chatId)) {
         switch (data) {
             case '/calculus_ch1':
-                bot.sendMessage(chatId, "Chapter 1: Limits and Continuity\n\nIn this chapter, we will explore the foundational concepts of limits and continuity.\n\nYou can download the PDF here: [Download Chapter 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf)\nReference: https://example.com/calculus-ch1\nTextbook: https://example.com/calculus-textbook");
+                bot.sendMessage(chatId, 
+                    "Chapter 1: Limits and Continuity\n\n" +
+                    "In this chapter, we will explore the foundational concepts of limits and continuity.\n\n" +
+                    "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf'>Download Chapter 1</a>\n" +
+                    "Reference: <a href='https://example.com/calculus-ch1'>https://example.com/calculus-ch1</a>\n" +
+                    "Textbook: <a href='https://example.com/calculus-textbook'>https://example.com/calculus-textbook</a>", 
+                    { parseMode: 'HTML' }
+                );
+                
 
                 break;
             case '/calculus_quiz1':
                 bot.sendMessage(chatId, "Take the quiz for Chapter 1: https://quizizz.com/calculus/chapter1");
                 break;
             case '/calculus_ws1':
-                // bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: [Download Worksheet 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf)");
-
                 bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf'>Download Worksheet 1</a>", { parseMode: 'HTML' });
 
 
@@ -213,7 +219,13 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Here is the worksheet for Chapter 4: [Link to Worksheet 4]");
                 break;
             case '/calculus_as1':
-                bot.sendMessage(chatId, "Assignment 1: Basic Math for NS Assi.\n\nThis worksheet covers additional exercises and practice problems related to the concepts learned in Chapter 1 and 2.\n\nYou can download the PDF here: [Download Assignment 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Basic%20Math%20for%20NS%20Assi.%20I%202016.pdf");
+                bot.sendMessage(chatId, 
+                    "Assignment 1: Basic Math for NS Assi.\n\n" +
+                    "This worksheet covers additional exercises and practice problems related to the concepts learned in Chapter 1 and 2.\n\n" +
+                    "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Basic%20Math%20for%20NS%20Assi.%20I%202016.pdf'>Download Assignment 1</a>", 
+                    { parseMode: 'HTML' }
+                );
+                
                 break;
             case '/calculus_as2':
                 bot.sendMessage(chatId, "Assignment 2: Covers Chapters 3 and 4. [Link to Assignment 2]");
