@@ -179,7 +179,8 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Take the quiz for Chapter 1: https://quizizz.com/calculus/chapter1");
                 break;
             case '/calculus_ws1':
-                bot.sendMessage(chatId, "Here is the worksheet for Chapter 1: [Link to Worksheet 1]");
+                bot.sendMessage(chatId, "Worksheet 1: Linear Algebra for Physics\n\nThis worksheet contains practice problems related to the concepts learned in Chapter 1.\n\nYou can download the PDF here: [Download Worksheet 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Linear%20Alg%20for%20Physics%20WS%202.pdf)");
+
                 break;
             case '/calculus_ch2':
                 bot.sendMessage(chatId, "Chapter 2: Derivatives\n\nIn this chapter, we will dive into the concept of derivatives and their applications.\nReference: https://example.com/calculus-ch2\nTextbook: https://example.com/calculus-textbook");
@@ -209,7 +210,7 @@ bot.on('callbackQuery', async (msg) => {
                 bot.sendMessage(chatId, "Here is the worksheet for Chapter 4: [Link to Worksheet 4]");
                 break;
             case '/calculus_as1':
-                bot.sendMessage(chatId, "Assignment 1: Covers Chapters 1 and 2. [Link to Assignment 1]");
+                bot.sendMessage(chatId, "Assignment 1: Basic Math for NS Assi.\n\nThis worksheet covers additional exercises and practice problems related to the concepts learned in Chapter 1 and 2.\n\nYou can download the PDF here: [Download Assignment 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Basic%20Math%20for%20NS%20Assi.%20I%202016.pdf");
                 break;
             case '/calculus_as2':
                 bot.sendMessage(chatId, "Assignment 2: Covers Chapters 3 and 4. [Link to Assignment 2]");
