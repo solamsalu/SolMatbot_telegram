@@ -172,7 +172,8 @@ bot.on('callbackQuery', async (msg) => {
     if (await canUseBot(msg.from.id, chatId)) {
         switch (data) {
             case '/calculus_ch1':
-                bot.sendMessage(chatId, "Chapter 1: Limits and Continuity\n\nIn this chapter, we will explore the foundational concepts of limits and continuity.\n\nYou can download the PDF here: [Download Chapter 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/edit/main/content/Applied%20one%20module.pdf)\nReference: https://example.com/calculus-ch1\nTextbook: https://example.com/calculus-textbook");
+                bot.sendMessage(chatId, "Chapter 1: Limits and Continuity\n\nIn this chapter, we will explore the foundational concepts of limits and continuity.\n\nYou can download the PDF here: [Download Chapter 1](https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf)\nReference: https://example.com/calculus-ch1\nTextbook: https://example.com/calculus-textbook");
+
                 break;
             case '/calculus_quiz1':
                 bot.sendMessage(chatId, "Take the quiz for Chapter 1: https://quizizz.com/calculus/chapter1");
