@@ -40,25 +40,51 @@ async function canUseBot(userId, chatId) {
 }
 
 // Command for /start
+// bot.on('/start', async (msg) => {
+//     if (await canUseBot(msg.from.id, msg.chat.id)) {
+//         bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
+//             replyMarkup: bot.inlineKeyboard([
+//                 [bot.inlineButton('📘 Calculus (Math1002)', { callback_data: '/calculus' })],
+//                 [bot.inlineButton('🔢 Algebra (Math1021)', { callback_data: '/algebra' })],
+//                 [bot.inlineButton('❓ Help', { callback_data: '/help' })],
+//                 [bot.inlineButton('✉️ Feedback', { callback_data: '/feedback' })],
+//                 [bot.inlineButton('📚 Resources', { callback_data: '/resources' })],
+//                 [bot.inlineButton('🧮 Quizzes Archive', { callback_data: '/quizzes' })],
+//                 [bot.inlineButton('🗣️ Discussion Forum', { callback_data: '/discussion' })],
+//                 [bot.inlineButton('📅 Upcoming Events', { callback_data: '/events' })],
+//                 [bot.inlineButton('💬 Contact Support', { callback_data: '/contact' })],
+//                 [bot.inlineButton('📝 Math Tips', { callback_data: '/mathtips' })],
+//                 [bot.inlineButton('🔄 Daily Math Problem', { callback_data: '/dailyproblem' })]
+//             ])
+//         });
+//     }
+// });
+
+
 bot.on('/start', async (msg) => {
-    if (await canUseBot(msg.from.id, msg.chat.id)) {
-        bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
-            replyMarkup: bot.inlineKeyboard([
-                [bot.inlineButton('📘 Calculus (Math1002)', { callback_data: '/calculus' })],
-                [bot.inlineButton('🔢 Algebra (Math1021)', { callback_data: '/algebra' })],
-                [bot.inlineButton('❓ Help', { callback_data: '/help' })],
-                [bot.inlineButton('✉️ Feedback', { callback_data: '/feedback' })],
-                [bot.inlineButton('📚 Resources', { callback_data: '/resources' })],
-                [bot.inlineButton('🧮 Quizzes Archive', { callback_data: '/quizzes' })],
-                [bot.inlineButton('🗣️ Discussion Forum', { callback_data: '/discussion' })],
-                [bot.inlineButton('📅 Upcoming Events', { callback_data: '/events' })],
-                [bot.inlineButton('💬 Contact Support', { callback_data: '/contact' })],
-                [bot.inlineButton('📝 Math Tips', { callback_data: '/mathtips' })],
-                [bot.inlineButton('🔄 Daily Math Problem', { callback_data: '/dailyproblem' })]
-            ])
-        });
+    try {
+        if (await canUseBot(msg.from.id, msg.chat.id)) {
+            await bot.sendMessage(msg.chat.id, `Welcome to the Mathematics Teaching Bot! Use the following commands to get started:`, {
+                replyMarkup: bot.inlineKeyboard([
+                    [bot.inlineButton('📘 Calculus (Math1002)', { callback_data: '/calculus' })],
+                    [bot.inlineButton('🔢 Algebra (Math1021)', { callback_data: '/algebra' })],
+                    [bot.inlineButton('❓ Help', { callback_data: '/help' })],
+                    [bot.inlineButton('✉️ Feedback', { callback_data: '/feedback' })],
+                    [bot.inlineButton('📚 Resources', { callback_data: '/resources' })],
+                    [bot.inlineButton('🧮 Quizzes Archive', { callback_data: '/quizzes' })],
+                    [bot.inlineButton('🗣️ Discussion Forum', { callback_data: '/discussion' })],
+                    [bot.inlineButton('📅 Upcoming Events', { callback_data: '/events' })],
+                    [bot.inlineButton('💬 Contact Support', { callback_data: '/contact' })],
+                    [bot.inlineButton('📝 Math Tips', { callback_data: '/mathtips' })],
+                    [bot.inlineButton('🔄 Daily Math Problem', { callback_data: '/dailyproblem' })]
+                ])
+            });
+        }
+    } catch (error) {
+        console.error('Error sending message:', error);
     }
 });
+
 
 bot.on('/algebra', async (msg) => {
     const chatId = msg.chat.id;
