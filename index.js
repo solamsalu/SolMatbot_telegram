@@ -1,9 +1,8 @@
+const express = require('express');
 const TeleBot = require('telebot');
-// Use the token directly
 const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
 
-
-// Initialize the bot with the direct token
+const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
 module.exports = bot;
@@ -29,6 +28,13 @@ require('./commands/quizzes')(bot);
 // require('./callbackHandler')(bot, canUseBot);
 bot.start();
 
+
+const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
+
+// Start the Express server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
 
