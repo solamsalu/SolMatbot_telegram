@@ -31,12 +31,12 @@ require('./commands/quizzes')(bot);
 bot.start();
 
 
-// const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
+const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
 
-// // Start the Express server
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-// });
+// Start the Express server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
 
