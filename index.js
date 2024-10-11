@@ -1,9 +1,9 @@
-// const express = require('express');
+const express = require('express');
 const TeleBot = require('telebot');
 const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
 // const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
 
-// const app = express();
+const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
 module.exports = bot;
