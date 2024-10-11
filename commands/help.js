@@ -12,10 +12,10 @@ module.exports = function(bot) {
         //    "/resources - Access useful resources\n" +
            "/discussion - Discussion Forum\n" +
            "/events - View upcoming events\n" +
-           "/contact - Contact support\n" +
+           "/contact - Contact support");
         //    "/mathtips - Get math tips\n" +
         //    "/quizzes - Access quizzes archive"
-        );
+       
    };
 
    // Handle the /help command
