@@ -39,9 +39,6 @@ async function canUseBot(userId, chatId) {
 
 
 
-// Import utilities
-const canUseBot = require('./utils/canUseBot');
-
 // Import command handlers
 require('./commands/start')(bot);
 require('./commands/help')(bot);
