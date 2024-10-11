@@ -2,11 +2,40 @@ const express = require('express');
 const TeleBot = require('telebot');
 const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
 // const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
-
 const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
 module.exports = bot;
+// Discussion group chat ID (replace with your actual chat ID)
+const groupChatId = -1002323508017;
+
+// Function to check if user is in the discussion group
+async function isMemberOfGroup(userId) {
+    try {
+        const res = await axios.get(`https://api.telegram.org/bot${BOT_TOKEN}/getChatMember`, {
+            params: {
+                chat_id: groupChatId,
+                user_id: userId
+            }
+        });
+        const memberStatus = res.data?.result?.status;
+        return ['member', 'administrator', 'creator'].includes(memberStatus);
+    } catch (error) {
+        console.error('Error checking group membership:', error);
+        return false;
+    }
+}
+
+// Function to check if a user is eligible to use the bot
+async function canUseBot(userId, chatId) {
+    const isMember = await isMemberOfGroup(userId);
+    if (!isMember) {
+        bot.sendMessage(chatId, 'You must be a member of the discussion group to use this bot. Join here: https://t.me/+1IJOyAA5CGM4YzJk');
+        return false;
+    }
+    return true;
+}
+
 
 
 // Import utilities
