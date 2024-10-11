@@ -6,7 +6,7 @@ const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
 const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
-module.exports = bot;
+// module.exports = bot;
 // Discussion group chat ID (replace with your actual chat ID)
 const groupChatId = -1002323508017;
 
