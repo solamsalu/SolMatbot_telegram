@@ -1,8 +1,9 @@
-const express = require('express');
+// const express = require('express');
 const TeleBot = require('telebot');
 const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
+// const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
 
-const app = express();
+// const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
 module.exports = bot;
@@ -14,7 +15,8 @@ const canUseBot = require('./utils/canUseBot');
 // Import command handlers
 require('./commands/start')(bot);
 require('./commands/help')(bot);
-require('./commands/calculus')(bot);
+require('./commands/calculus1')(bot);
+// require('./commands/calculus')(bot);
 require('./commands/algebra')(bot);
 require('./commands/feedback')(bot);
 require('./commands/resources')(bot);
@@ -29,12 +31,12 @@ require('./commands/quizzes')(bot);
 bot.start();
 
 
-const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
+// const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
 
-// Start the Express server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// // Start the Express server
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
 
 
 

@@ -5,6 +5,7 @@ module.exports = function(bot) {
    const sendHelpMessage = (chatId) => {
        bot.sendMessage(chatId, "Here are the available commands:\n" +
            "/start - Start the bot\n" +
+           "/calculus1 - Access Calculus I (Math2021)\n" +
            "/calculus - Access Calculus (Math1002)\n" +
            "/algebra - Access Algebra (Math1021)\n" +
            "/feedback - Share your feedback\n" +
