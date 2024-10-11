@@ -50,7 +50,7 @@ module.exports = (bot) => {
         const userId = msg.from.id; // Get user ID
         const chatId = msg.chat.id; // Get chat ID
         
-        const canUse = await canUseBot(userId, chatId); // Check if the user can use the bot
+        const canUse = await canUseBot(bot, userId, chatId); // Check if the user can use the bot
         if (canUse) {
             bot.sendMessage(chatId, `<b>Welcome to the Mathematics Teaching Bot!</b>\nUse the following commands to get started:`, {
                 replyMarkup: bot.inlineKeyboard([
