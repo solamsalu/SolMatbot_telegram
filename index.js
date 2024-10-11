@@ -1,22 +1,13 @@
+
 const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
-
-const BOT_TOKEN = process.env.BOT_TOKEN || 'your-telegram-bot-token'; // Using environment variable
-const URL = process.env.URL || 'https://your-vercel-app-url.vercel.app'; // Your Vercel deployment URL
-
+const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
+// const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
 const app = express();
+const bot = new TeleBot(BOT_TOKEN);
 
-// Set up TeleBot with webhook
-const bot = new TeleBot({
-    token: BOT_TOKEN,
-    webhook: {
-        url: `${URL}/webhook`, // The URL where Telegram will send updates
-        port: process.env.PORT || 3000
-    }
-});
-
-// Discussion group chat ID
+// Discussion group chat ID (replace with your actual chat ID)
 const groupChatId = -1002323508017;
 
 // Function to check if user is in the discussion group
@@ -46,10 +37,13 @@ async function canUseBot(bot, userId, chatId) {
     return true;
 }
 
+
+
 // Import command handlers
 require('./commands/start')(bot);
 require('./commands/help')(bot);
 require('./commands/calculus1')(bot);
+// require('./commands/calculus')(bot);
 require('./commands/algebra')(bot);
 require('./commands/feedback')(bot);
 require('./commands/resources')(bot);
@@ -60,88 +54,16 @@ require('./commands/contact')(bot);
 require('./commands/mathtips')(bot);
 require('./commands/quizzes')(bot);
 
-// Middleware to handle incoming webhook updates
-app.use(bot.middleware());
- 
-// Start Express server
-const PORT = process.env.PORT || 3000;
+// require('./callbackHandler')(bot, canUseBot);
+bot.start();
+
+
+const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
+
+// Start the Express server
 app.listen(PORT, () => {
-    console.log(`Bot is running on ${URL}`);
+    console.log(`Server is running on port ${PORT}`);
 });
-
-// Set webhook for Telegram (Vercel works best with webhooks)
-bot.setWebhook(`${URL}/webhook`);
-
-
-
-
-
-
-// const express = require('express');
-// const TeleBot = require('telebot');
-// const axios = require('axios');
-// const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
-// // const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
-// const app = express();
-// const bot = new TeleBot(BOT_TOKEN);
-
-// // Discussion group chat ID (replace with your actual chat ID)
-// const groupChatId = -1002323508017;
-
-// // Function to check if user is in the discussion group
-// async function isMemberOfGroup(userId) {
-//     try {
-//         const res = await axios.get(`https://api.telegram.org/bot${BOT_TOKEN}/getChatMember`, {
-//             params: {
-//                 chat_id: groupChatId,
-//                 user_id: userId
-//             }
-//         });
-//         const memberStatus = res.data?.result?.status;
-//         return ['member', 'administrator', 'creator'].includes(memberStatus);
-//     } catch (error) {
-//         console.error('Error checking group membership:', error);
-//         return false;
-//     }
-// }
-
-// // Function to check if a user is eligible to use the bot
-// async function canUseBot(bot, userId, chatId) {
-//     const isMember = await isMemberOfGroup(userId);
-//     if (!isMember) {
-//         bot.sendMessage(chatId, 'You must be a member of the discussion group to use this bot. Join here: https://t.me/+1IJOyAA5CGM4YzJk');
-//         return false;
-//     }
-//     return true;
-// }
-
-
-
-// // Import command handlers
-// require('./commands/start')(bot);
-// require('./commands/help')(bot);
-// require('./commands/calculus1')(bot);
-// // require('./commands/calculus')(bot);
-// require('./commands/algebra')(bot);
-// require('./commands/feedback')(bot);
-// require('./commands/resources')(bot);
-// require('./commands/discussion')(bot);
-// require('./commands/events')(bot);
-// require('./commands/dailyproblem')(bot);
-// require('./commands/contact')(bot);
-// require('./commands/mathtips')(bot);
-// require('./commands/quizzes')(bot);
-
-// // require('./callbackHandler')(bot, canUseBot);
-// bot.start();
-
-
-// const PORT = process.env.PORT || 3000; // Use Render's port or fallback to 3000
-
-// // Start the Express server
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-// });
 
 
 
