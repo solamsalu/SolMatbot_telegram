@@ -3,7 +3,7 @@ const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
 
-const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
+const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
 const URL = 'https://sol-matbot-telegram.vercel.app';
 
 const app = express();
@@ -17,8 +17,7 @@ const bot = new TeleBot({
     }
 });
 
-// Discussion group chat ID
-const groupChatId = -1002323508017;
+console.log("TeleBot configured with webhook");
 
 // Function to check if user is in the discussion group
 async function isMemberOfGroup(userId) {
@@ -63,10 +62,10 @@ require('./commands/quizzes')(bot);
 
 // Express middleware for Telegram webhook
 app.use(express.json()); // Parse JSON from Telegram
-
 app.post('/webhook', (req, res) => {
     bot.receiveUpdate(req.body);  // Send the incoming Telegram request to TeleBot
     res.sendStatus(200);  // Respond with success status
+    console.log("Webhook received an update");
 });
 
 // Start Express server
@@ -75,8 +74,11 @@ app.listen(PORT, () => {
     console.log(`Bot is running on ${URL}`);
 });
 
-// Set webhook for Telegram (important for Vercel to work with webhooks)
-bot.setWebhook(`${process.env.URL}/webhook`);
+// Set webhook for Telegram
+bot.setWebhook(`${URL}/webhook`).catch(err => {
+    console.error('Error setting webhook:', err);
+    process.exit(1);
+});
 
 
 
