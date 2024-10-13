@@ -3,7 +3,7 @@ const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
 
-const BOT_TOKEN = process.env.BOT_TOKEN || 'your-telegram-bot-token'; 
+const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460'; 
 const URL = 'https://sol-matbot-telegram.vercel.app';
 
 const app = express();
