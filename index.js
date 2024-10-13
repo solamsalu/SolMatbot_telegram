@@ -76,7 +76,7 @@ app.listen(PORT, () => {
 });
 
 // Set webhook for Telegram (important for Vercel to work with webhooks)
-bot.setWebhook(`${URL}/webhook`);
+bot.setWebhook(`${process.env.URL}/webhook`);
 
 
 
