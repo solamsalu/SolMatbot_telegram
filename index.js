@@ -4,8 +4,7 @@ const TeleBot = require('telebot');
 const axios = require('axios');
 
 const BOT_TOKEN = process.env.BOT_TOKEN || 'your-telegram-bot-token'; 
-const URL = process.env.URL 
-
+const URL = 'https://sol-matbot-telegram.vercel.app';
 const app = express();
 
 // Set up TeleBot with webhook
