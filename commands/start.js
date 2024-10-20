@@ -67,3 +67,20 @@ module.exports = (bot) => {
         }
     });
 };
+
+
+
+// const canUseBot = require('../utils/canUseBot');
+// const sendMainMenu = require('../utils/sendMainMenu');
+
+// module.exports = (bot) => {
+//     bot.on('/start', async (msg) => {
+//         const userId = msg.from.id;
+//         const chatId = msg.chat.id;
+        
+//         const canUse = await canUseBot(bot, userId, chatId); // Check if user can use the bot
+//         if (canUse) {
+//             await sendMainMenu(bot, chatId); // Send the main menu
+//         }
+//     });
+// };

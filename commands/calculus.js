@@ -133,7 +133,9 @@ module.exports = (bot) => {
                 [bot.inlineButton('Assignment 1: Assignment from Chapter 1 and 2', { callback: '/calculus_as1' })],
                 [bot.inlineButton('Assignment 2: Assignment from Chapter 3 and 4', { callback: '/calculus_as1' })],
                 [bot.inlineButton('Mid Exam', { callback: '/calculus_midExam' })],
-                [bot.inlineButton('Final Exam', { callback: '/calculus_finalExam' })]
+                [bot.inlineButton('Final Exam', { callback: '/calculus_finalExam' })],
+                [bot.inlineButton('Main Page', { callback: '/start' })]
+
             ])
         });
     }
