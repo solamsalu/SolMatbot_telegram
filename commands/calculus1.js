@@ -213,6 +213,8 @@
 
 
 const canUseBot = require('../utils/canUseBot');
+const textbookLink = "https://drive.google.com/file/d/13GZADLr9sd4FXLKc3vRZus9XXjf-d4SG/view?usp=sharing";
+ 
 
 module.exports = (bot) => {
    // Calculus1 Command
@@ -279,7 +281,7 @@ module.exports = (bot) => {
                "<b>Chapter 1: Note and Reference</b>\n\n" +
                "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 1 Note</a>\n" +
                "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20for%20Physics.pdf'>Download Reference</a>\n" +
-               "Textbook: <a href='https://example.com/calculus1-textbook'>https://example.com/calculus1-textbook</a>",
+               "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -315,7 +317,7 @@ module.exports = (bot) => {
                "<b>Chapter 2: Note and Reference</b>\n\n" +
                "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 2</a>\n" +
                "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20for%20Physics.pdf'>Download Reference</a>\n" +
-               "Textbook: <a href='https://example.com/calculus1-textbook'>https://example.com/calculus1-textbook</a>",
+               "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -351,7 +353,7 @@ module.exports = (bot) => {
                "<b> Chapter 3: Note and Reference </b>\n\n" +
                "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 3</a>\n" +
                "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20for%20Physics.pdf'>Download Reference</a>\n" +
-               "Textbook: <a href='https://example.com/calculus1-textbook'>https://example.com/calculus1-textbook</a>",
+               "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -389,7 +391,7 @@ module.exports = (bot) => {
                "<b>Chapter 4: Note and Reference</b>\n\n" +
                "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 4</a>\n" +
                "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20for%20Physics.pdf'>Download Reference</a>\n" +
-               "Textbook: <a href='https://example.com/calculus1-textbook'>https://example.com/calculus1-textbook</a>",
+               "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>",
                { parseMode: 'HTML' }
             );
             break;
