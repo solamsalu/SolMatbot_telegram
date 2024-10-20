@@ -281,7 +281,7 @@ module.exports = (bot) => {
                "<b>Chapter 1: Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 1 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>\n" + 
-               "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf'>Download Reference</a>",
+               "Reference: <a href='https://drive.google.com/file/d/1ujo10NMvLCGmfNpvP0CUehX6iKHQ7ibT/view?usp=sharing'>Download Reference</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -317,7 +317,7 @@ module.exports = (bot) => {
                "<b>Chapter 2: Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 2 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>\n" + 
-               "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf'>Download Reference</a>",
+               "Reference: <a href='https://drive.google.com/file/d/1ujo10NMvLCGmfNpvP0CUehX6iKHQ7ibT/view?usp=sharing'>Download Reference</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -353,7 +353,7 @@ module.exports = (bot) => {
                "<b> Chapter 3: Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 3 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>\n" + 
-               "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf'>Download Reference</a>",
+               "Reference: <a href='https://drive.google.com/file/d/1ujo10NMvLCGmfNpvP0CUehX6iKHQ7ibT/view?usp=sharing'>Download Reference</a>",
                { parseMode: 'HTML' }
             );
             break;
@@ -391,7 +391,7 @@ module.exports = (bot) => {
                "<b>Chapter 4: Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Calculus%20I%20lecture%20note.pdf'>Download Chapter 4 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Calculus I Textbook</a>\n" + 
-               "Reference: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/main/content/Applied%20one%20module.pdf'>Download Reference</a>",
+               "Reference: <a href='https://drive.google.com/file/d/1ujo10NMvLCGmfNpvP0CUehX6iKHQ7ibT/view?usp=sharing'>Download Reference</a>",
                { parseMode: 'HTML' }
             );
             break;
