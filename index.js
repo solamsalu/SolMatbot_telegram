@@ -55,8 +55,9 @@ bot.on('text', async (msg) => {
 // Import command handlers
 require('./commands/start')(bot);
 require('./commands/help')(bot);
-require('./commands/calculus1')(bot);
+// require('./commands/calculus1')(bot);
 // require('./commands/calculus')(bot);
+require('./commands/appliedMath-III')(bot);
 require('./commands/algebra')(bot);
 require('./commands/feedback')(bot);
 require('./commands/resources')(bot);
