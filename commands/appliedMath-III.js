@@ -89,7 +89,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch1':
             bot.sendMessage(chatId,
                "<b>Chapter 1: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='content/Applied III Unit One.pdf'>Download Chapter 1 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/refs/heads/main/content/Applied%20III%20Unit%20One.pdf'>Download Chapter 1 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href=' " + reference + "'>Download Reference</a>",
                {
