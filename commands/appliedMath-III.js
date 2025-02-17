@@ -45,7 +45,7 @@ module.exports = (bot) => {
                "5. <b>Vector Calculus</b>: Scalar and vector fields, curves, arc length, tangents, gradients, divergence, curl, line integrals, Green's theorem, surface integrals, divergence theorem, Stokes' theorem, applications.\n" +
                "6. <b>Complex Analytic Functions</b>: Complex numbers, functions of complex variables, limits, derivatives, analytic functions, Cauchy-Riemann equations, Laplace equations, elementary equations (exponential, trigonometric, hyperbolic, logarithmic functions).\n" +
                "7. <b>Complex Integral</b>: Line integrals in the complex plane, Cauchy integral theorem, Cauchy integral formula, derivatives of analytic functions.\n\n" +
-               "You can download the complete course outline here: <a href='https://your-outline-link.com'>Download Course Outline</a>",
+               "You can download the complete course outline here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/34c524df08a0cb421ecf854c2e6c4ca16614fac2/content/Applied%20Mathematics%20III%20Course%20Syllabus%20for%20Engineering%20Students%202025.pdf'>Download Course Outline</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
