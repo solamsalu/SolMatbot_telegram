@@ -56,6 +56,7 @@ module.exports = (bot) => {
                 replyMarkup: bot.inlineKeyboard([
                     [bot.inlineButton('📘 Calculus I (Math2021)', { callback: 'calculus1_start' })],
                     [bot.inlineButton('📗 Algebra (Math1021)', { callback: 'algebra_start' })],
+                    [bot.inlineButton('📗 Applied Math III (Math2072)', { callback: 'appliedmath3_start' })],
                     [bot.inlineButton('💬 Discussion Forum', { callback: 'discussion_button' })],
                     [bot.inlineButton('📅 Upcoming Events', { callback: 'events_button' })],
                     [bot.inlineButton('🧮 Daily Math Problem', { callback: 'daily_problem_button' })],
