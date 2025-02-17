@@ -2,7 +2,7 @@ const canUseBot = require('../utils/canUseBot');
 const sendMainMenu = require('../utils/sendMainMenu');
 
 const textbookLink = "https://drive.google.com/file/d/1iPATmsD5SvZF86c_GCFlwktdCjbKn2HJ/view?usp=drive_link";
-const reference = "https://drive.google.com/file/d/12oc4vEjLLpg-AgbpnHV_SvSEVpZ3W_Hc/view?usp=drive_link"
+const referenceLink = "https://drive.google.com/file/d/12oc4vEjLLpg-AgbpnHV_SvSEVpZ3W_Hc/view?usp=drive_link"
 
 module.exports = (bot) => {
    // AppliedMathIII Command
@@ -91,7 +91,7 @@ module.exports = (bot) => {
                "<b>Chapter 1: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/refs/heads/main/content/Applied%20III%20Unit%20One.pdf'>Download Chapter 1 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -152,7 +152,7 @@ module.exports = (bot) => {
                "<b>Chapter 2: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 2 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
