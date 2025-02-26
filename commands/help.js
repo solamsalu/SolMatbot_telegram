@@ -6,7 +6,7 @@ module.exports = function(bot) {
        bot.sendMessage(chatId, "Here are the available commands:\n" +
            "/start - Start the bot\n" +
            "/calculus1 - Access Calculus I (Math2021)\n" +
-        //    "/calculus - Access Calculus (Math1002)\n" +
+            "/appliedmath3 - Access Applied Math III (Math2072)\n" +
            "/algebra - Access Algebra (Math1021)\n" +
         //    "/feedback - Share your feedback\n" +
         //    "/resources - Access useful resources\n" +
