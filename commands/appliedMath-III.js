@@ -117,7 +117,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws1':
             bot.sendMessage(chatId, "<b>Worksheet 1: Introduction to Differential Equations</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 1.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 1</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/content/Applied%20III%20WS%20-1.pdf'>Download Worksheet 1</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -150,7 +150,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch2':
             bot.sendMessage(chatId,
                "<b>Chapter 2: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://your-note-link.com'>Download Chapter 2 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/content/Applied%20III%20Unit%20Two.pdf'>Download Chapter 2 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
@@ -178,7 +178,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws2':
             bot.sendMessage(chatId, "<b>Worksheet 2: Ordinary Differential Equation of the Second Order</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 2.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 2</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/content/Applied%20III%20WS%20-2.pdf'>Download Worksheet 2</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
