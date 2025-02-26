@@ -17,7 +17,7 @@ module.exports = (bot) => {
          bot.sendMessage(chatId, 'An error occurred. Please try again later.');
       }
    });
-
+ 
    // Handle callback queries for appliedmath3-related buttons
    bot.on('callbackQuery', async (callbackQuery) => {
       const chatId = callbackQuery.message.chat.id;
