@@ -57,7 +57,7 @@ require('./commands/start')(bot);
 require('./commands/help')(bot);
 // require('./commands/calculus1')(bot);
 // require('./commands/calculus')(bot);
-require('./commands/appliedMath-III')(bot);
+require('./commands/appliedMathIII')(bot);
 require('./commands/algebra')(bot);
 require('./commands/feedback')(bot);
 require('./commands/resources')(bot);
