@@ -150,7 +150,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch2':
             bot.sendMessage(chatId,
                "<b>Chapter 2: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/blob/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Unit%20Two.pdf'>Download Chapter 2 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Unit%20Two.pdf'>Download Chapter 2 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
@@ -211,7 +211,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch3':
             bot.sendMessage(chatId,
                "<b>Chapter 3: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/blob/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href=' " + reference + "'>Download Reference</a>",
                {
@@ -239,7 +239,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws3':
             bot.sendMessage(chatId, "<b>Worksheet 3: Laplace Transform</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 3.\n\n" +
-               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/blob/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20WS%20-%203%20(Laplace%20Transform).pdf'>Download Worksheet 3</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20WS%20-%203%20(Laplace%20Transform).pdf'>Download Worksheet 3</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
