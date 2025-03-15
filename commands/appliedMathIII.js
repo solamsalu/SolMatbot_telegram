@@ -213,7 +213,7 @@ module.exports = (bot) => {
                "<b>Chapter 3: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
