@@ -211,7 +211,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch3':
             bot.sendMessage(chatId,
                "<b>Chapter 3: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://your-note-link.com'>Download Chapter 3 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href=' " + reference + "'>Download Reference</a>",
                {
@@ -239,7 +239,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws3':
             bot.sendMessage(chatId, "<b>Worksheet 3: Laplace Transform</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 3.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 3</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/content/Applied%20III%20WS%20-%203%20(Laplace%20Transform).pdf/Applied%20III%20WS%20-%203%20(Laplace%20Transform).pdf'>Download Worksheet 3</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -488,7 +488,7 @@ module.exports = (bot) => {
             bot.sendMessage(chatId,
                "Assignment 1: Covers Chapters 1, 2, and 3.\n\n" +
                "This assignment contains additional exercises and practice problems from Chapters 1, 2, and 3.\n\n" +
-               "You can download the PDF here: <a href='https://your-assignment-link.com/assignment1'>Download Assignment 1</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/621a13ecb0e4e586e0e24dd9ba82e7cc8ddfc471/contenthttps://github.com/solamsalu/SolMatbot_telegram/blob/a9f7b5e1904b309e4c1c13f5dc255e81c656d5bd/content/Applied%20III%20Assi_1.pdf'>Download Assignment 1</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
