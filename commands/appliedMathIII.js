@@ -259,9 +259,9 @@ module.exports = (bot) => {
                "Please choose one of the following options:", {
                parseMode: 'HTML',
                replyMarkup: bot.inlineKeyboard([
-                  [bot.inlineButton('📄 Chapter 5 Note and Reference', { callback: '/appliedmath3_ch4' })],
-                  [bot.inlineButton('📝 Quiz 5', { callback: '/appliedmath3_quiz4' })],
-                  [bot.inlineButton('📂 Worksheet 5', { callback: '/appliedmath3_ws4' })],
+                  [bot.inlineButton('📄 Chapter 4 Note and Reference', { callback: '/appliedmath3_ch4' })],
+                  [bot.inlineButton('📝 Quiz 4', { callback: '/appliedmath3_quiz4' })],
+                  [bot.inlineButton('📂 Worksheet 4', { callback: '/appliedmath3_ws4' })],
                   [bot.inlineButton('🔙 Back', { callback: 'appliedmath3_start' })],
                   [bot.inlineButton('🏠 Main Page', { callback: '/start' })]
                ])
@@ -318,9 +318,9 @@ module.exports = (bot) => {
                "Please choose one of the following options:", {
                parseMode: 'HTML',
                replyMarkup: bot.inlineKeyboard([
-                  [bot.inlineButton('📄 Chapter 4 Note and Reference', { callback: '/appliedmath3_ch5' })],
-                  [bot.inlineButton('📝 Quiz 4', { callback: '/appliedmath3_quiz5' })],
-                  [bot.inlineButton('📂 Worksheet 4', { callback: '/appliedmath3_ws5' })],
+                  [bot.inlineButton('📄 Chapter 5 Note and Reference', { callback: '/appliedmath3_ch5' })],
+                  [bot.inlineButton('📝 Quiz 5', { callback: '/appliedmath3_quiz5' })],
+                  [bot.inlineButton('📂 Worksheet 5', { callback: '/appliedmath3_ws5' })],
                   [bot.inlineButton('🔙 Back', { callback: 'appliedmath3_start' })],
                   [bot.inlineButton('🏠 Main Page', { callback: '/start' })]
                ])
