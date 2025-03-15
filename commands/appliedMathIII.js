@@ -250,16 +250,18 @@ module.exports = (bot) => {
             );
             break;
 
+         
+
          case '/appliedmath3_ch4_menu':
             bot.sendMessage(chatId,
-               "📘 <b>Chapter 4: Fourier Series and Fourier Integral</b>\n\n" +
-               "This chapter covers periodic functions, trigonometric series, Fourier series and integrals, complex Fourier series and integrals, Fourier cosine and sine transformations, and Fourier transformation.\n\n" +
+               "📘 <b>Chapter 4: Vector Calculus</b>\n\n" +
+               "This chapter covers scalar and vector fields, curves, arc length, tangents, gradients, divergence, curl, line integrals, Green's theorem, surface integrals, divergence theorem, Stokes' theorem, and applications.\n\n" +
                "Please choose one of the following options:", {
                parseMode: 'HTML',
                replyMarkup: bot.inlineKeyboard([
-                  [bot.inlineButton('📄 Chapter 4 Note and Reference', { callback: '/appliedmath3_ch4' })],
-                  [bot.inlineButton('📝 Quiz 4', { callback: '/appliedmath3_quiz4' })],
-                  [bot.inlineButton('📂 Worksheet 4', { callback: '/appliedmath3_ws4' })],
+                  [bot.inlineButton('📄 Chapter 5 Note and Reference', { callback: '/appliedmath3_ch4' })],
+                  [bot.inlineButton('📝 Quiz 5', { callback: '/appliedmath3_quiz4' })],
+                  [bot.inlineButton('📂 Worksheet 5', { callback: '/appliedmath3_ws4' })],
                   [bot.inlineButton('🔙 Back', { callback: 'appliedmath3_start' })],
                   [bot.inlineButton('🏠 Main Page', { callback: '/start' })]
                ])
@@ -271,7 +273,7 @@ module.exports = (bot) => {
                "<b>Chapter 4: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 4 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + reference + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -283,7 +285,7 @@ module.exports = (bot) => {
             break;
 
          case '/appliedmath3_quiz4':
-            bot.sendMessage(chatId, "Take the quiz for Chapter 4: https://quizizz.com/appliedmath3/chapter4",
+            bot.sendMessage(chatId, "Take the quiz for Chapter 5: https://quizizz.com/appliedmath3/chapter4",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -295,7 +297,7 @@ module.exports = (bot) => {
             break;
 
          case '/appliedmath3_ws4':
-            bot.sendMessage(chatId, "<b>Worksheet 4: Fourier Series and Fourier Integral</b>\n\n" +
+            bot.sendMessage(chatId, "<b>Worksheet 4: Vector Calculus</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 4.\n\n" +
                "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 4</a>",
                {
@@ -311,14 +313,14 @@ module.exports = (bot) => {
 
          case '/appliedmath3_ch5_menu':
             bot.sendMessage(chatId,
-               "📘 <b>Chapter 5: Vector Calculus</b>\n\n" +
-               "This chapter covers scalar and vector fields, curves, arc length, tangents, gradients, divergence, curl, line integrals, Green's theorem, surface integrals, divergence theorem, Stokes' theorem, and applications.\n\n" +
+               "📘 <b>Chapter 5: Line and Surface Integrals</b>\n\n" +
+               "This chapter covers Line Integrals, Green's Theorem, Surface Integrals and Divergence and Stock's Theorem.\n\n" +
                "Please choose one of the following options:", {
                parseMode: 'HTML',
                replyMarkup: bot.inlineKeyboard([
-                  [bot.inlineButton('📄 Chapter 5 Note and Reference', { callback: '/appliedmath3_ch5' })],
-                  [bot.inlineButton('📝 Quiz 5', { callback: '/appliedmath3_quiz5' })],
-                  [bot.inlineButton('📂 Worksheet 5', { callback: '/appliedmath3_ws5' })],
+                  [bot.inlineButton('📄 Chapter 4 Note and Reference', { callback: '/appliedmath3_ch5' })],
+                  [bot.inlineButton('📝 Quiz 4', { callback: '/appliedmath3_quiz5' })],
+                  [bot.inlineButton('📂 Worksheet 4', { callback: '/appliedmath3_ws5' })],
                   [bot.inlineButton('🔙 Back', { callback: 'appliedmath3_start' })],
                   [bot.inlineButton('🏠 Main Page', { callback: '/start' })]
                ])
@@ -330,7 +332,7 @@ module.exports = (bot) => {
                "<b>Chapter 5: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 5 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + reference + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -342,7 +344,7 @@ module.exports = (bot) => {
             break;
 
          case '/appliedmath3_quiz5':
-            bot.sendMessage(chatId, "Take the quiz for Chapter 5: https://quizizz.com/appliedmath3/chapter5",
+            bot.sendMessage(chatId, "Take the quiz for Chapter 4: https://quizizz.com/appliedmath3/chapter5",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -354,7 +356,7 @@ module.exports = (bot) => {
             break;
 
          case '/appliedmath3_ws5':
-            bot.sendMessage(chatId, "<b>Worksheet 5: Vector Calculus</b>\n\n" +
+            bot.sendMessage(chatId, "<b>Worksheet 5: Line and Surface Integrals</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 5.\n\n" +
                "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 5</a>",
                {
@@ -388,7 +390,7 @@ module.exports = (bot) => {
                "<b>Chapter 6: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 6 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + reference + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -446,7 +448,7 @@ module.exports = (bot) => {
                "<b>Chapter 7: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 7 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href=' " + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + reference + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
