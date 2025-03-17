@@ -208,10 +208,11 @@ module.exports = (bot) => {
             });
             break;
 
+         
          case '/appliedmath3_ch3':
             bot.sendMessage(chatId,
                "<b>Chapter 3: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/8eeb6ea3e7e6edb2f7780e049e562d1f069fc921/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/25bcbc3071df0f75a89ef5a217f58b9a9d5a338c/content/Applied%20III%20Chap%203.pdf'>Download Chapter 3 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
