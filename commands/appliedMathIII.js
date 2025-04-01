@@ -300,7 +300,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws4':
             bot.sendMessage(chatId, "<b>Worksheet 4: Vector Calculus</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 4.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 4</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/d4fd944bc2494e072bc3b81bfeb71be948e8a0be/content/Applied%20III%20WS%20-3.pdf'>Download Worksheet 4</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
