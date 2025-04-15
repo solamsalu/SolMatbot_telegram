@@ -14,7 +14,7 @@ const groupChatId = -1002323508017;
 // Function to check if user is in the discussion group
 async function isMemberOfGroup(userId) {
     try {
-        const res = await axios.get(`https://api.telegram.org/bot${BOT_TOKEN}/getChatMember`, {
+        const res = await axios.get(`https://api.telegram.org/bot7639349507:AAGay1vhzXWxtLGgkzG4uR_ekxmtOeVKJag/getChatMember`, {
             params: {
                 chat_id: groupChatId,
                 user_id: userId
