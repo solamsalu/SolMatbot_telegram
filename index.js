@@ -3,7 +3,7 @@ const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
 const app = express();
-const bot = new TeleBot(BOT_TOKEN);
+const bot = new TeleBot(process.env.BOT_TOKEN);
 
 // Discussion group chat ID (replace with your actual chat ID)
 const groupChatId = -1002323508017;
