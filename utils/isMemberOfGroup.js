@@ -1,6 +1,6 @@
 const axios = require('axios');
 // const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
-
+const groupChatId = -1002323508017;
 
 module.exports = async function isMemberOfGroup(userId) {
     try {
