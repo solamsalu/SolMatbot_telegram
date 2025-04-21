@@ -2,7 +2,6 @@
 const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
-const BOT_TOKEN = '7639349507:AAFrTXA5T0ExQhhYQS7UjN3kzkn3CqG9_dY';
 // const BOT_TOKEN = '7639349507:AAGBgqfKdSMU4fnBIs-2BuvEfLb5uhdSLO4';
 // const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
 const app = express();
