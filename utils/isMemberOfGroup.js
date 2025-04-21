@@ -4,7 +4,7 @@ const groupChatId = -1002323508017;
 
 module.exports = async function isMemberOfGroup(userId) {
     try {
-        const res = await axios.get(`https://api.telegram.org/bot${BOT_TOKEN}/getChatMember`, {
+        const res = await axios.get(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/getChatMember`, {
             params: { chat_id: groupChatId , user_id: userId }
         });
         const memberStatus = res.data?.result?.status;
