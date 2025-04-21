@@ -1,5 +1,5 @@
 const axios = require('axios');
-const BOT_TOKEN = '7639349507:AAGay1vhzXWxtLGgkzG4uR_ekxmtOeVKJag';
+const BOT_TOKEN = '7639349507:AAFrTXA5T0ExQhhYQS7UjN3kzkn3CqG9_dY';
 // const BOT_TOKEN = '7639349507:AAEMg5R2hjjFZv1ByT_1aDZeNR9kY_Wc460';
 const groupChatId = -1002323508017;
 
