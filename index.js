@@ -2,8 +2,6 @@
 const express = require('express');
 const TeleBot = require('telebot');
 const axios = require('axios');
-// const BOT_TOKEN = '7639349507:AAGBgqfKdSMU4fnBIs-2BuvEfLb5uhdSLO4';
-// const BOT_TOKEN = '8067898750:AAHCJ5KkxulAd3ERtx7BhyzjZ7ucJkut2Vc';
 const app = express();
 const bot = new TeleBot(BOT_TOKEN);
 
@@ -13,7 +11,7 @@ const groupChatId = -1002323508017;
 // Function to check if user is in the discussion group
 async function isMemberOfGroup(userId) {
     try {
-        const res = await axios.get(`https://api.telegram.org/bot7639349507:AAGay1vhzXWxtLGgkzG4uR_ekxmtOeVKJag/getChatMember`, {
+        const res = await axios.get(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/getChatMember`, {
             params: {
                 chat_id: groupChatId,
                 user_id: userId
