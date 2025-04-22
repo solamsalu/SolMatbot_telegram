@@ -359,7 +359,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ws5':
             bot.sendMessage(chatId, "<b>Worksheet 5: Line and Surface Integrals</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 5.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 5</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/60fc946a6199b2395faf4560eada59cc5085609a/content/Applied%20III%20WS%20-%204.pdf'>Download Worksheet 5</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
