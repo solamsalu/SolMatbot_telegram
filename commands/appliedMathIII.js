@@ -333,7 +333,7 @@ module.exports = (bot) => {
                "<b>Chapter 5: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/9db331c74cd187de307e2082c760f663edf8d7c3/content/Applied%20III%20Unit%20Five.pdf'>Download Chapter 5 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href='" + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -391,7 +391,7 @@ module.exports = (bot) => {
                "<b>Chapter 6: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 6 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href='" + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -449,7 +449,7 @@ module.exports = (bot) => {
                "<b>Chapter 7: 📚 Textbook and Reference</b>\n\n" +
                "Note: <a href='https://your-note-link.com'>Download Chapter 7 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
-               "Reference: <a href='" + reference + "'>Download Reference</a>",
+               "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
