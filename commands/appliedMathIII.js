@@ -385,9 +385,7 @@ module.exports = (bot) => {
                ])
             });
             break;
-  "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/c342eba68e75c61dc9c84b2adb473e679a016b0d/content/Applied%20III%20Chapter%206.pdf'>Download Chapter 6 Note</a>\n" +
 
-https://github.com/solamsalu/SolMatbot_telegram/blob/c342eba68e75c61dc9c84b2adb473e679a016b0d/content/Applied%20III%20Chapter%206.pdf
          case '/appliedmath3_ch6':
             bot.sendMessage(chatId,
                "<b>Chapter 6: 📚 Textbook and Reference</b>\n\n" +
@@ -419,7 +417,7 @@ https://github.com/solamsalu/SolMatbot_telegram/blob/c342eba68e75c61dc9c84b2adb4
          case '/appliedmath3_ws6':
             bot.sendMessage(chatId, "<b>Worksheet 6: Complex Analytic Functions</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 6.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 6</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/e572578442d282e4009ea800f6f378e25ed05da5/content/Applied%20III%20WS%20-%205.pdf'>Download Worksheet 6</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
