@@ -385,11 +385,13 @@ module.exports = (bot) => {
                ])
             });
             break;
+  "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/c342eba68e75c61dc9c84b2adb473e679a016b0d/content/Applied%20III%20Chapter%206.pdf'>Download Chapter 6 Note</a>\n" +
 
+https://github.com/solamsalu/SolMatbot_telegram/blob/c342eba68e75c61dc9c84b2adb473e679a016b0d/content/Applied%20III%20Chapter%206.pdf
          case '/appliedmath3_ch6':
             bot.sendMessage(chatId,
                "<b>Chapter 6: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://your-note-link.com'>Download Chapter 6 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/c342eba68e75c61dc9c84b2adb473e679a016b0d/content/Applied%20III%20Chapter%206.pdf'>Download Chapter 6 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
