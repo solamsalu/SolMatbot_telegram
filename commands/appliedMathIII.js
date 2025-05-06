@@ -447,7 +447,7 @@ module.exports = (bot) => {
          case '/appliedmath3_ch7':
             bot.sendMessage(chatId,
                "<b>Chapter 7: 📚 Textbook and Reference</b>\n\n" +
-               "Note: <a href='https://your-note-link.com'>Download Chapter 7 Note</a>\n" +
+               "Note: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20Unit%20Seven.pdf'>Download Chapter 7 Note</a>\n" +
                "Textbook: <a href='" + textbookLink + "'>Download Applied Math III Textbook</a>\n" +
                "Reference: <a href='" + referenceLink + "'>Download Reference</a>",
                {
@@ -472,10 +472,11 @@ module.exports = (bot) => {
             );
             break;
 
+https://github.com/solamsalu/SolMatbot_telegram/blob/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20WS%20-%206.pdf
          case '/appliedmath3_ws7':
             bot.sendMessage(chatId, "<b>Worksheet 7: Complex Integral</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 7.\n\n" +
-               "You can download the PDF here: <a href='https://your-worksheet-link.com'>Download Worksheet 7</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20WS%20-%206.pdf'>Download Worksheet 7</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
@@ -502,11 +503,12 @@ module.exports = (bot) => {
             );
             break;
 
+https://github.com/solamsalu/SolMatbot_telegram/blob/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20Assi_2.pdf
          case '/appliedmath3_as2':
             bot.sendMessage(chatId,
                "Assignment 2: Covers Chapters 4, 5, 6, and 7.\n\n" +
                "This assignment contains additional exercises and practice problems from Chapters 4, 5, 6, and 7.\n\n" +
-               "You can download the PDF here: <a href='https://your-assignment-link.com/assignment2'>Download Assignment 2</a>",
+               "You can download the PDF here: <a href='https://raw.githubusercontent.com/solamsalu/SolMatbot_telegram/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20Assi_2.pdf'>Download Assignment 2</a>",
                {
                   parseMode: 'HTML',
                   replyMarkup: bot.inlineKeyboard([
