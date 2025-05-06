@@ -472,7 +472,6 @@ module.exports = (bot) => {
             );
             break;
 
-https://github.com/solamsalu/SolMatbot_telegram/blob/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20WS%20-%206.pdf
          case '/appliedmath3_ws7':
             bot.sendMessage(chatId, "<b>Worksheet 7: Complex Integral</b>\n\n" +
                "This worksheet contains practice problems related to the concepts learned in Chapter 7.\n\n" +
