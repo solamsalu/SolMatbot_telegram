@@ -502,7 +502,6 @@ module.exports = (bot) => {
             );
             break;
 
-https://github.com/solamsalu/SolMatbot_telegram/blob/dab3d7fac00b148c3411c8343e827d08140c8c04/content/Applied%20III%20Assi_2.pdf
          case '/appliedmath3_as2':
             bot.sendMessage(chatId,
                "Assignment 2: Covers Chapters 4, 5, 6, and 7.\n\n" +
